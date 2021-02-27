@@ -3,5 +3,13 @@
     <string name="app_name">Political Preparedness</string>
 
     <!-- TODO: Add necessary string values -->
+    <!-- Launch view -->
+    <string name="upcoming_elections_button_text">Upcoming Elections</string>
+    <string name="find_my_representatives_button_text">Find My Representatives</string>
+    <string name="ballot_box_content_description">An image of a ballot box</string>
+
+    <!-- Elections view -->
+    <string name="upcoming_elections_header_text">Upcoming Elections</string>
+    <string name="saved_elections_header_text">Saved Elections</string>
 
 </resources>
