@@ -12,7 +12,7 @@ import com.example.android.politicalpreparedness.databinding.FragmentRepresentat
 import com.example.android.politicalpreparedness.network.models.Address
 import java.util.Locale
 
-class DetailFragment : Fragment() {
+class RepresentativeFragment : Fragment() {
 
     companion object {
         //TODO: Add Constant for Location request
