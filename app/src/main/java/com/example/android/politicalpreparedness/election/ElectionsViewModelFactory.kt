@@ -4,7 +4,6 @@ import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 
-//TODO: Create Factory to generate ElectionViewModel with provided election datasource
 /**
  * A custom implementation of a [ViewModelProvider.Factory] to generate [ElectionsViewModel] instances.
  */

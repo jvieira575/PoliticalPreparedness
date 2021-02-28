@@ -12,9 +12,23 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/election_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context="com.example.android.politicalpreparedness.MainActivity">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="@dimen/progress_bar_width"
+            android:layout_height="@dimen/progress_bar_height"
+            android:contentDescription="@string/progress_bar_icon_content_description"
+            android:indeterminateDrawable="@drawable/loading_animation"
+            android:visibility="gone"
+            app:apiStatus="@{viewModel.status}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <!-- TODO: Add Upcoming Election Recycler and Header -->
         <TextView
@@ -54,8 +68,10 @@
             android:id="@+id/saved_elections_text_view"
             style="@style/TextAppearance.MaterialComponents.Headline5"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:padding="@dimen/default_padding"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/default_padding"
+            android:paddingEnd="@dimen/default_padding"
+            android:paddingBottom="@dimen/default_padding"
             android:text="@string/saved_elections_header_text"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
