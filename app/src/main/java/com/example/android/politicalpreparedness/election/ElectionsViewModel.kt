@@ -37,8 +37,8 @@ class ElectionsViewModel(application: Application): ViewModel() {
     val navigateToVoterInformation: LiveData<Election>
         get() = _navigateToVoterInformation
 
-    // The internal MutableLiveData that stores the status of the most recent election request
-    private val _status = MutableLiveData<ApiStatus>()
+    // Live Data that stores the status of the most recent election request
+    private val _status: MutableLiveData<ApiStatus> = MutableLiveData()
     val status: LiveData<ApiStatus>
         get() = _status
 

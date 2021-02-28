@@ -1,6 +1,5 @@
 package com.example.android.politicalpreparedness.election.adapter
 
-//import com.example.android.politicalpreparedness.databinding.ViewholderElectionBinding
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -33,10 +32,9 @@ class ElectionListAdapter(private val clickListener: ElectionListener): ListAdap
         return ElectionViewHolder.from(parent)
     }
 
-    //TODO: Bind ViewHolder
     /**
      * Called by RecyclerView to display the data at the specified position. This method should
-     * update the contents of the [ViewHolder.itemView] to reflect the item at the given
+     * update the contents of the [ElectionViewHolder.itemView] to reflect the item at the given
      * position.
      */
     override fun onBindViewHolder(holder: ElectionViewHolder, position: Int) {
@@ -48,7 +46,6 @@ class ElectionListAdapter(private val clickListener: ElectionListener): ListAdap
     }
 }
 
-//TODO: Create ElectionViewHolder
 /**
  * Custom implementation of a [RecyclerView.ViewHolder] to bind an [Election] to a list item.
  */
@@ -62,7 +59,6 @@ class ElectionViewHolder(private val electionListItemBinding: ElectionListItemBi
         electionListItemBinding.executePendingBindings()
     }
 
-    //TODO: Add companion object to inflate ViewHolder (from)
     /**
      * Companion object used to inflate the [RecyclerView.ViewHolder].
      */
@@ -75,7 +71,6 @@ class ElectionViewHolder(private val electionListItemBinding: ElectionListItemBi
     }
 }
 
-//TODO: Create ElectionDiffCallback
 /**
  * Utility class used to determine if items in the [RecyclerView] are the same in some way.
  */
@@ -96,7 +91,6 @@ class ElectionDiffCallback : DiffUtil.ItemCallback<Election>() {
     }
 }
 
-//TODO: Create ElectionListener
 /**
  *  An implementation of the click listener to allow users to interact with [RecyclerView] items.
  */
