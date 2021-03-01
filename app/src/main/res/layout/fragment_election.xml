@@ -90,5 +90,5 @@
             tools:listitem="@layout/election_list_item" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-    
+
 </layout>

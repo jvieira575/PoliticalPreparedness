@@ -38,8 +38,12 @@ class ElectionsRepository(private val electionDatabase: ElectionDatabase) {
      * Retrieves voter information from the Google Civics API.
      */
     suspend fun getVoterInformation(electionId : Int, division: Division): VoterInfoResponse {
-        // TODO: Determine how to build a specific address
-        val address : String = division.country + " " + division.state
+        var address : String = division.country
+
+        if (division.country.isNotBlank() && division.state.isNotBlank()) {
+            address = division.country  + ", " + division.state
+        }
+
         return CivicsApi.retrofitService.getVoterInformation(address, electionId.toLong(), false)
     }
 

@@ -13,7 +13,7 @@ import com.example.android.politicalpreparedness.network.models.Election
  */
 class ElectionListAdapter(private val clickListener: ElectionListener): ListAdapter<Election, ElectionViewHolder>(ElectionDiffCallback()) {
 
-    // The list of Elections to display
+    // The list of elections to display
     var elections: List<Election> = emptyList()
         set(value) {
             field = value
@@ -21,7 +21,7 @@ class ElectionListAdapter(private val clickListener: ElectionListener): ListAdap
         }
 
     /**
-     * Function to determine the number of Election instances
+     * Function to determine the number of [Election] instances
      */
     override fun getItemCount(): Int = elections.size
 
@@ -77,14 +77,14 @@ class ElectionViewHolder(private val electionListItemBinding: ElectionListItemBi
 class ElectionDiffCallback : DiffUtil.ItemCallback<Election>() {
 
     /**
-     * Determines is items are the same using the id of the items.
+     * Determines if items are the same using the id of the items.
      */
     override fun areItemsTheSame(oldItem: Election, newItem: Election): Boolean {
         return oldItem.id == newItem.id
     }
 
     /**
-     * Determines is items' contents are the same.
+     * Determines if the items' contents are the same.
      */
     override fun areContentsTheSame(oldItem: Election, newItem: Election): Boolean {
         return oldItem == newItem
