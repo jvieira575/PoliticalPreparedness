@@ -109,7 +109,8 @@ class VoterInfoViewModel(application: Application) : ViewModel() {
      */
     fun navigateToUrl(url : String) {
         Timber.i("Url clicked is: %s", url)
-        _url.value = url    }
+        _url.value = url
+    }
 
     /**
      * Clears the selected URL after navigating to the website.

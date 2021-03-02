@@ -2,7 +2,6 @@
 <resources>
     <string name="app_name">Political Preparedness</string>
 
-    <!-- TODO: Add necessary string values -->
     <!-- General -->
     <string name="progress_bar_icon_content_description">Progress bar icon</string>
 
@@ -22,5 +21,22 @@
     <string name="ballot_information_text">Ballot Information</string>
     <string name="follow_election_button_text">Follow Election</string>
     <string name="unfollow_election_button_text">Unfollow Election</string>
+    <string name="error_message_title">Error</string>
+    <string name="error_message_invalid_election_request">The Election you have selected does not have the valid information required to retrieve details of the election. Please try another election.</string>
+
+    <!-- Representatives -->
+    <string name="representative_search_header_text">Representative Search</string>
+    <string name="address_line_1_text">Address Line 1</string>
+    <string name="address_line_2_text">Address Line 2</string>
+    <string name="city_text">City</string>
+    <string name="zip_text">Zip</string>
+    <string name="my_representatives_header_text">My Representatives</string>
+    <string name="find_my_representatives_text">Find My Representatives</string>
+    <string name="use_my_location_text">Use My Location</string>
+    <string name="representative_photo_content_description">The representative\'s photo</string>
+    <string name="website_icon_content_description">Website icon.</string>
+    <string name="facebook_icon_content_description">Facebook icon</string>
+    <string name="twitter_icon_content_description">Twitter icon</string>
+    <string name="no_representatives_found_text">No Representatives Found</string>
 
 </resources>
