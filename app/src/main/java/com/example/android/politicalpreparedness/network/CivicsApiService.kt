@@ -42,9 +42,8 @@ interface CivicsApiService {
     @GET("voterinfo")
     suspend fun getVoterInformation(@Query("address") address: String, @Query("electionId") electionId : Long, @Query("officialOnly") officialOnly : Boolean) : VoterInfoResponse
 
-    //TODO: Add representatives API Call
     @GET("representatives")
-    suspend fun getRepresentatives(@Query("address") address: Address, @Query("includeOffices") includeOffices : Boolean, @Query("levels") levels : String, @Query("roles") roles : String) : RepresentativeResponse
+    suspend fun getRepresentatives(@Query("address") address: Address, @Query("includeOffices") includeOffices: Boolean, @Query("levels") levels: String?, @Query("roles") roles: String?) : RepresentativeResponse
 }
 
 object CivicsApi {
