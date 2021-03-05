@@ -31,12 +31,11 @@
 
         <TextView
             android:id="@+id/upcoming_elections_text_view"
-            style="@style/TextAppearance.MaterialComponents.Headline5"
+            style="@style/TitleStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/default_padding"
             android:text="@string/upcoming_elections_header_text"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -63,14 +62,13 @@
 
         <TextView
             android:id="@+id/saved_elections_text_view"
-            style="@style/TextAppearance.MaterialComponents.Headline5"
+            style="@style/TitleStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="@dimen/default_padding"
             android:paddingEnd="@dimen/default_padding"
             android:paddingBottom="@dimen/default_padding"
             android:text="@string/saved_elections_header_text"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/election_guideline" />

@@ -111,14 +111,12 @@
 
         <Button
             android:id="@+id/follow_election_button"
-            style="@style/TextAppearance.MaterialComponents.Button"
+            style="@style/ButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/default_margin"
-            android:background="@color/colorPrimary"
             android:onClick="@{() -> viewModel.followOrUnfollowElection()}"
             android:text="@{viewModel.isElectionSaved ? @string/unfollow_election_button_text : @string/follow_election_button_text}"
-            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent" />
