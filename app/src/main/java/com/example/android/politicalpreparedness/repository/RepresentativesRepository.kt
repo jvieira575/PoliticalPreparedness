@@ -5,7 +5,7 @@ import com.example.android.politicalpreparedness.network.models.Address
 import com.example.android.politicalpreparedness.network.models.RepresentativeResponse
 
 /**
- * The repository class containing operations for use with both network operations.
+ * The repository class containing operations for use with network operations.
  */
 class RepresentativesRepository() {
 

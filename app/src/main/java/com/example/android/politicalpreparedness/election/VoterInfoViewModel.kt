@@ -69,8 +69,6 @@ class VoterInfoViewModel(application: Application) : ViewModel() {
 
                 // Get voter information
                 val voterInformationResponse = electionsRepository.getVoterInformation(electionId, division)
-                Timber.i("VoterInformationResponse Election: %s", voterInformationResponse.election.toString())
-                Timber.i("VoterInformationResponse state: %s", voterInformationResponse.state?.toString())
 
                 // Set individual values
                 _voterInformationElection.value = voterInformationResponse.election

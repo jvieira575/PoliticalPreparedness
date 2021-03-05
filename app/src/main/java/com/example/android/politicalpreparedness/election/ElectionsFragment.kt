@@ -18,7 +18,6 @@ import com.example.android.politicalpreparedness.network.models.Election
 import com.google.android.material.snackbar.Snackbar
 import timber.log.Timber
 
-
 /**
  * A [Fragment] that displays upcoming and saved elections.
  */

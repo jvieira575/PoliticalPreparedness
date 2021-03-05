@@ -62,6 +62,9 @@ class RepresentativeViewModel: ViewModel() {
         }
     }
 
+    /**
+     * Retrieves a [List] of [Representative] instances using the stored [Address].
+     */
     fun getRepresentatives() {
         viewModelScope.launch {
             getRepresentatives(_address.value)

@@ -70,7 +70,7 @@ class RepresentativeFragment : Fragment() {
         }
 
         viewModel.status.observe(viewLifecycleOwner, Observer<ApiStatus> { apiStatus ->
-            when(apiStatus) {
+            when (apiStatus) {
                 ApiStatus.ERROR -> {
                     Snackbar.make(requireView(), R.string.error_representatives, Snackbar.LENGTH_LONG).show()
                 }
