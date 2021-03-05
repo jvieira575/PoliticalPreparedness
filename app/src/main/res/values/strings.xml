@@ -13,6 +13,7 @@
     <!-- Elections view -->
     <string name="upcoming_elections_header_text">Upcoming Elections</string>
     <string name="saved_elections_header_text">Saved Elections</string>
+    <string name="error_upcoming_elections">Unexpected error retrieving upcoming elections</string>
 
     <!-- Voter information -->
     <string name="election_information_header_text">Election Information</string>
