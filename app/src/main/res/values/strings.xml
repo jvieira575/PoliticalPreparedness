@@ -40,5 +40,6 @@
     <string name="twitter_icon_content_description">Twitter icon</string>
     <string name="no_representatives_found_text">No Representatives Found</string>
     <string name="error_location_services_required">Location Services are required to "Use My Location"</string>
+    <string name="error_representatives">Unexpected error retrieving representatives</string>
 
 </resources>

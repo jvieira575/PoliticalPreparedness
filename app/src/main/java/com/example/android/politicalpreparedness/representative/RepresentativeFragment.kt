@@ -17,6 +17,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.android.politicalpreparedness.R
 import com.example.android.politicalpreparedness.databinding.FragmentRepresentativeBinding
+import com.example.android.politicalpreparedness.network.domain.ApiStatus
 import com.example.android.politicalpreparedness.network.models.Address
 import com.example.android.politicalpreparedness.representative.adapter.RepresentativeListAdapter
 import com.example.android.politicalpreparedness.representative.adapter.RepresentativeListener
@@ -67,6 +68,15 @@ class RepresentativeFragment : Fragment() {
             hideKeyboard()
             getRepresentativesByLocation()
         }
+
+        viewModel.status.observe(viewLifecycleOwner, Observer<ApiStatus> { apiStatus ->
+            when(apiStatus) {
+                ApiStatus.ERROR -> {
+                    Snackbar.make(requireView(), R.string.error_representatives, Snackbar.LENGTH_LONG).show()
+                }
+                else -> {}
+            }
+        })
 
         return binding.root
     }

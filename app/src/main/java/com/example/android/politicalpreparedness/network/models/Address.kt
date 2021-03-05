@@ -18,6 +18,6 @@ data class Address (
      * Determines if the [Address] is valid.
      */
     fun isValidAddress(): Boolean {
-        return this.city.isNotBlank() && this.state.isNotBlank()
+        return this.state.isNotBlank()
     }
 }
